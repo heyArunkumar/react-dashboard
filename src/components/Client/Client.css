@@ -1,0 +1,78 @@
+.active-client .actives {
+    font-size: 11px;
+    color: #9fa1a4;
+}
+
+.active-client {
+    padding: 20px 15px 40px 15px;
+}
+
+.active-client .client {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width:768px) {
+    .clients {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+}
+
+.Client-search input {
+    padding: 9px 42px;
+    margin-right: 10px;
+    border: 1px solid #cbcbcd7a !important;
+}
+
+@media screen and (min-width:768px) {
+    .Client-search {
+        padding: 30px 0;
+    }
+}
+
+.new-client-btn {
+    padding: 10px 25px !important;
+    border: none;
+}
+
+.active-client-count {
+    display: flex;
+}
+
+.active-client-count span {
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #9fa1a4;
+}
+
+.active-client-count .active-current {
+    color: black;
+    font-weight: bold;
+}
+
+.client-current-active {
+    width: 85%;
+    height: 3px;
+    background-color: #00cd5f !important;
+    margin: 8px 0 0 10px;
+}
+
+@media screen and (max-width:380px) {
+    .client-current-active {
+        margin: 13px 0 0 -10px;
+    }
+}
+
+.seacr-input-icon {
+    position: relative;
+    left:30px;
+    bottom: -3px;
+}

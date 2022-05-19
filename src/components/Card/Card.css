@@ -1,0 +1,54 @@
+.Card{
+    padding: 20px;
+}
+.Card .cardImg img{
+    border-radius: 50px;
+}
+.Card .card-profile{
+    display: flex;
+}
+.cardName{
+    margin-left: 13px;
+}
+.card-name{
+    font-weight: 500;
+    font-size: 18px;
+}
+.caed-planName{
+    font-size: 12px;
+    color: #cbcbcd;
+}
+.next-Meal span{
+    font-size: 11px;
+    color: #babcbd;
+}
+.Card-bottom-section{
+    display: flex;
+    justify-content: space-between;
+}
+.Card-bottom-section .progress, .upcoming{
+    font-size: 12px;
+    color: #9fa1a4;
+}
+.Card-bottom-section .checkindate{
+    font-size: 13px;
+    font-weight: 500;
+}
+.card-section{
+    display: flex;
+    justify-content: space-between;
+}
+.circle{
+    width: 20px !important;
+    margin-top: 9px;
+    margin-right: 7px; 
+}
+
+.circleProgress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    border: 1px solid #cbcbcd7a !important;
+}

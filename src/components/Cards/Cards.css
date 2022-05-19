@@ -1,0 +1,45 @@
+.Cards {
+    display: grid;
+    gap: 30px;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .Cards {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .Cards {
+        grid-template-columns: auto;
+    }
+}
+
+.parentContainer {
+    width: 100%;
+    border: 1px solid #cbcbcd7a;
+    animation: move 4s linear ease-in;
+    border-radius: 1px;
+}
+
+.parentContainer:hover {
+    background-color: black;
+    color: white;
+    position: relative;
+    right: 40px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes move {
+    0% {
+        transform: translate();
+    }
+
+    50% {
+        transform: translateY(1350px);
+    }
+}
