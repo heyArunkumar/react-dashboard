@@ -10,10 +10,10 @@ import { motion } from 'framer-motion'
 
 const sideBarVarient = {
   true: {
-    left: '0'
+    left: '-60%'
   },
   false: {
-    left: '-60%'
+    left: '0'
   }
 }
 const Sidebar = () => {
@@ -21,7 +21,7 @@ const Sidebar = () => {
   const [expanded, setExpanded] = useState(true)
   return (
     <>
-      <div className='bars' style={expanded ? { left: "60%" } : { left: "3%" }} onClick={() => setExpanded(!expanded)}>
+      <div className='bars' style={expanded ? { left: "3%" } : { left: "60%" }} onClick={() => setExpanded(!expanded)}>
         <FaBars />
       </div>
       <motion.div className='sidebar' variants={sideBarVarient} animate={window.innerWidth <= 768 ? `${expanded}` : ''}>
